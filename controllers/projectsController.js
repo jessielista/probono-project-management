@@ -12,18 +12,13 @@ router.get('/new', (req, res) => {
   res.render('new.ejs')
 })
 
-// show route
-router.get('/:id', (req, res) => {
-    res.render('show.ejs')
-  })
+// post route
+router.post('/', (req, res) => {
+    Projects.create(req.body, (error, createdProjects) => {
+    res.redirect('/probono')
+        console.log(createdProjects)
 
-  // edit route
-router.get('/:id/edit', (req, res) => {
-    res.render('edit.ejs')
-		})
-
-
-
-
+    })
+})
 
 module.exports = router
