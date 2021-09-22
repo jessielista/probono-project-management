@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Index Page</title>
+<!-- <link rel="stylesheet" href="styles.css" type="text/css" /> -->
+  <link rel="stylesheet" href="/css/styles.css"> 
+
+</head>
+<body>
+  <h1> Shopping Page  </h1>
+
+   <a href="probono/new">Add a new Project</a>
+
+  <ul>
+      <% for (let i = 0; i < project.length; i++) { %>
+        <br>
+        <li>
+        <a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %>  </a> </br>
+
+          Project Description: <%= project[i].projectDescription %> </br>
+          Date Submitted: <%= project[i].dateSubmitted %> </br>
+          Date Placed: <%= project[i].datePlaced %> </br>
+
+          
+        </li>
+        <% } %>
+    </ul>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
   <title>Document</title>
 </head>
 <body>
   <h1>Pro bono Projects Home Page</h1>
+  <a href="probono/new">Add a new Product</a>
+
+ <ul>
+      
+    </ul>
+  
 </body>
-</html>
+</html> -->

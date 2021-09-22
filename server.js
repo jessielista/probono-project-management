@@ -9,7 +9,7 @@ require('dotenv').config()
 const mongoURI = process.env.mongoURI
 const db = mongoose.connection
 
-const Projects = require('./models/projects')
+const Projects = require('./models/project.js')
 
 mongoose.connect(
   mongoURI,
