@@ -10,20 +10,18 @@
   <h1> Pro bono Projects - Home Page  </h1>
 
    <!-- <a href="/probono/new">Add a new Project</a> -->
-  
-  <ul>
-     <ul>
+   <form action="/probono/new"><button>Add New Project</button></form>
+  <div class="container">
+    <table>
       <% for (let i = 0; i < project.length; i++) { %>
-        <br>
-        <li>
-        <a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %>  </a> </br>
-          Firm Name: <%= project[i].firmName%> </br>
-          Project Status: <%= project[i].projectStatus %> </br>
-
-        </li>
+        <tr>
+        
+        <td><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a></td> 
+          <td>Firm Name: <%= project[i].firmName%></td>
+          <td>Project Status: <%= project[i].projectStatus %></td>
+        </tr>
         <% } %>
-    </ul>
-    <form action="/probono/new">
-    <button>Add New Project</button>
+        </table>
+    </div>
 </body>
 </html>

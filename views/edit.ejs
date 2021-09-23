@@ -8,7 +8,7 @@
 </head>
 <body>
  <h1>Edit Project Page</h1>
-
+    <a href="/probono">Back to the HOME PAGE</a>
     <!-- <form method="POST" action="/probono"> -->
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
@@ -37,7 +37,11 @@
       </fieldset>
       <fieldset>
         <label for="projectStatus"> Project Status:</label>
-        <input id="projectStatus" type="text" name="projectStatus" value="<%=project.projectStatus%>">
+        <select name="projectStatus" id="projectStatus">
+        <option value="available">Available</option>
+        <option value="current">Current</option>
+        <option value="complete">Complete</option>
+        </select>
       </fieldset>
        <fieldset>
         <label for="legalAgreement"> Legal Agreement:</label>

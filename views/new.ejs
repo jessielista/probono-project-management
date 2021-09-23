@@ -9,20 +9,21 @@
 
   </head>
   <body>
+    <a href="/probono">Back to the HOME PAGE</a>
     <h1>New Project Page</h1>
 
     <form method="POST" action="/probono">
       <fieldset>
-        <label for="projectName"> Project Name*:</label>
-        <input id="projectName" type="text" name="projectName" placeholder="Enter Project Name">
+        <label for="projectName"> Project Name:</label>
+        <input id="projectName" type="text" name="projectName" placeholder="Enter Project Name" required>
       </fieldset>
       <fieldset>
         <label for="projectDescription"> Project Description:</label>
-        <input id="projectDescription" type="text" name="projectDescription" placeholder="Enter Project Description">
+        <input id="projectDescription" type="text" name="projectDescription" placeholder="Enter Project Description" required>
       </fieldset>
       <fieldset>
-        <label for="dateSubmitted"> Date Submitted*:</label>
-        <input id="dateSubmitted" type="text" name="dateSubmitted" placeholder="Enter Project Submission Date">
+        <label for="dateSubmitted"> Date Submitted:</label>
+        <input id="dateSubmitted" type="text" name="dateSubmitted" placeholder="Enter Project Submission Date" required>
       </fieldset>
        <fieldset>
         <label for="datePlaced"> Date Placed:</label>
@@ -30,7 +31,7 @@
       </fieldset>
       <fieldset>
         <label for="firmName"> Firm Name:</label>
-        <input id="firmName" type="text" name="firmName" placeholder="Enter Firm Name">
+        <input id="firmName" type="text" name="firmName" placeholder="Enter Firm Name or None">
       </fieldset>
       <fieldset>
         <label for="introductionsMade"> IntroductionsMade:</label>
@@ -38,7 +39,11 @@
       </fieldset>
       <fieldset>
         <label for="projectStatus"> Project Status:</label>
-        <input id="projectStatus" type="text" name="projectStatus" placeholder="current/available/current">
+         <select name="projectStatus" id="projectStatus">
+        <option value="available">Available</option>
+        <option value="current">Current</option>
+        <option value="complete">Complete</option>
+        </select>
       </fieldset>
        <fieldset>
         <label for="legalAgreement"> Legal Agreement:</label>
@@ -48,7 +53,7 @@
         <label for="thankYouLetter"> Thank You Letter:</label>
         <input id="thankYouLetter" type="text" name="thankYouLetter" placeholder="put here">
       </fieldset>
-      <!-- Plan to make Project Status as radio buttons or checkbox. Will Make the legal agreement and ty letter able to accept a file, like a PDF 1 pager -->
+      <!-- Plan use radio buttons or checkbox. Will Make the legal agreement and ty letter able to accept a file, like a PDF 1 pager. Also probably good idea to use conditions to check for proper input -->
 
       <!-- Need to add in internal and external contacts here -->
       <!-- <fieldset>

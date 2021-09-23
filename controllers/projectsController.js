@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     res.render('index.ejs', {
       project: allProjects,
     })
-  })
+  }).populate('projectStatus')
 })
 
 // new route

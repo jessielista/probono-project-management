@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
 const projectsSchema = new Schema({
-  projectName: { type: String, required: true },
+  projectName: { type: String},
   projectDescription: { type: String },
-  dateSubmitted: { type: String, default: Date, required: true },
+  dateSubmitted: { type: String, default: Date},
   datePlaced: { type: String, default: Date },
   firmName: { type: String },
   introductionsMade: { type: String },
@@ -30,7 +30,10 @@ const projectsSchema = new Schema({
   //     title: { type: String },
   //   },
   // ],
-  projectStatus: { type: String },
+  projectStatus: { 
+    type: String, 
+    enum: ['current', 'available', 'complete'], default: 'available' 
+  },
   legalAgreement: { type: String },
   thankYouLetter: { type: String },
 })
