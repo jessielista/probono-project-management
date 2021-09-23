@@ -13,39 +13,39 @@
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
         <label for="projectName"> Project Name:</label>
-        <input id="projectName" type="text" name="projectName" placeholder="Enter Project Name">
+        <input id="projectName" type="text" name="projectName" value="<%=project.projectName%>">
       </fieldset>
       <fieldset>
         <label for="projectDescription"> Project Description</label>
-        <input id="projectDescription" type="text" name="projectDescription" placeholder="Enter Project Description">
+        <input id="projectDescription" type="text" name="projectDescription" value="<%=project.projectDescription%>">
       </fieldset>
       <fieldset>
         <label for="dateSubmitted"> Date Submitted</label>
-        <input id="dateSubmitted" type="text" name="dateSubmitted" placeholder="Enter Project Submission Date">
+        <input id="dateSubmitted" type="text" name="dateSubmitted" value="<%=project.dateSubmitted%>">
       </fieldset>
        <fieldset>
         <label for="datePlaced"> Date Placed:</label>
-        <input id="datePlaced" type="text" name="datePlaced" placeholder="Enter Project Placement Date">
+        <input id="datePlaced" type="text" name="datePlaced" value="<%=project.datePlaced%>">
       </fieldset>
       <fieldset>
         <label for="firmName"> Firm Name:</label>
-        <input id="firmName" type="text" name="firmName" placeholder="Enter Firm Name">
+        <input id="firmName" type="text" name="firmName" value="<%=project.firmName%>">
       </fieldset>
       <fieldset>
-        <label for="introductionsMade"> IntroductionsMade:</label>
-        <input id="introductionsMade" type="text" name="introductionsMade" placeholder="True/False">
+        <label for="introductionsMade"> Introductions Made:</label>
+        <input id="introductionsMade" type="text" name="introductionsMade" value="<%=project.introductionsMade%>">
       </fieldset>
       <fieldset>
         <label for="projectStatus"> Project Status:</label>
-        <input id="projectStatus" type="text" name="projectStatus" placeholder="current/available/current">
+        <input id="projectStatus" type="text" name="projectStatus" value="<%=project.projectStatus%>">
       </fieldset>
        <fieldset>
         <label for="legalAgreement"> Legal Agreement:</label>
-        <input id="legalAgreement" type="text" name="legalAgreement" placeholder="put here">
+        <input id="legalAgreement" type="text" name="legalAgreement" value="<%=project.legalAgreement%>">
       </fieldset>
        <fieldset>
         <label for="thankYouLetter"> Thank You Letter:</label>
-        <input id="thankYouLetter" type="text" name="thankYouLetter" placeholder="put here">
+        <input id="thankYouLetter" type="text" name="thankYouLetter" value="<%=project.thankYouLetter%>">
       </fieldset>
       <!-- Plan to make Project Status as radio buttons or checkbox. Will Make the legal agreement and ty letter able to accept a file, like a PDF 1 pager -->
 
