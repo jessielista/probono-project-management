@@ -4,18 +4,11 @@ const { Schema, model } = mongoose
 const projectsSchema = new Schema({
   projectName: { type: String, required: true },
   projectDescription: { type: String },
-  dateSubmitted: { type: String, default: Date },
+  dateSubmitted: { type: String, default: Date, required: true },
   datePlaced: { type: String, default: Date },
   firmName: { type: String },
   introductionsMade: { type: String },
   // internalContacts: [
-  //   {
-  //     associateName: { type: String },
-
-  //   },
-  // ],
-
-  // [
   //   {
   //     associateName: { type: String },
   //     email: { type: String },

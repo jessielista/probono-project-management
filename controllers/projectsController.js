@@ -56,11 +56,11 @@ router.post('/', (req, res) => {
   })
 })
 
-// // delete route
-// router.delete('/:id', (req, res) => {
-//   Projects.findByIdAndDelete(req.params.id, (error, deletedProject) => {
-//     res.redirect('/probono')
-//   })
-// })
+// delete route
+router.delete('/:id', (req, res) => {
+  Projects.findByIdAndDelete(req.params.id, (error, deletedProject) => {
+    res.redirect('/probono')
+  })
+})
 
 module.exports = router
