@@ -33,7 +33,11 @@
       </fieldset>
       <fieldset>
         <label for="introductionsMade"> Introductions Made:</label>
-        <input id="introductionsMade" type="text" name="introductionsMade" value="<%=project.introductionsMade%>">
+        <select name="introductionsMade" id="introductionsMade">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+        <option value="soon">Soon</option>
+        </select>
       </fieldset>
       <fieldset>
         <label for="projectStatus"> Project Status:</label>

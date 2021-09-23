@@ -2,25 +2,29 @@ const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
 const projectsSchema = new Schema({
-  projectName: { type: String},
+  projectName: { type: String },
   projectDescription: { type: String },
-  dateSubmitted: { type: String, default: Date},
+  dateSubmitted: { type: String, default: Date },
   datePlaced: { type: String, default: Date },
   firmName: { type: String },
-  introductionsMade: { type: String },
+  introductionsMade: {
+    type: String,
+    enum: ['yes', 'no', 'soon'],
+    default: 'no',
+  },
   // internalContacts: [
   //   {
-  //     associateName: { type: String },
+  //     associateName: String ,
   //     email: { type: String },
   //     phoneNumber: { type: Number },
   //     title: { type: String },
   //   },
-  //   {
-  //     associateName: { type: String },
-  //     email: { type: String },
-  //     phoneNumber: { type: Number },
-  //     title: { type: String },
-  //   },
+  //   // {
+  //   //   associateName: { type: String },
+  //   //   email: { type: String },
+  //   //   phoneNumber: { type: Number },
+  //   //   title: { type: String },
+  //   // },
   // ],
   // externalContacts: [
   //   {
@@ -30,9 +34,10 @@ const projectsSchema = new Schema({
   //     title: { type: String },
   //   },
   // ],
-  projectStatus: { 
-    type: String, 
-    enum: ['current', 'available', 'complete'], default: 'available' 
+  projectStatus: {
+    type: String,
+    enum: ['current', 'available', 'complete'],
+    default: 'available',
   },
   legalAgreement: { type: String },
   thankYouLetter: { type: String },
