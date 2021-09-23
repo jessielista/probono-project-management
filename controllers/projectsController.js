@@ -27,26 +27,26 @@ router.get('/:id', (req, res) => {
   })
 })
 
-// // edit route
-// router.get('/:id/edit', (req, res) => {
-//   Projects.findById(req.params.id, (error, foundProject) => {
-//     // console.log(foundProject)
-//     res.render('edit.ejs', { project: foundProject })
-//   })
-// })
+// edit route
+router.get('/:id/edit', (req, res) => {
+  Projects.findById(req.params.id, (error, foundProject) => {
+    // console.log(foundProject)
+    res.render('edit.ejs', { project: foundProject })
+  })
+})
 
-// // update route
-// router.put('/:id', (req, res) => {
-//   Projects.findByIdAndUpdate(
-//     req.params.id,
-//     req.body,
-//     { new: true },
-//     (error, updatedProject) => {
-//       res.redirect('/probono/' + req.params.id)
-//       // console.log(updatedProject)
-//     }
-//   )
-// })
+// update route
+router.put('/:id', (req, res) => {
+  Projects.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+    { new: true },
+    (error, updatedProject) => {
+      res.redirect('/probono/' + req.params.id)
+      // console.log(updatedProject)
+    }
+  )
+})
 
 // post route
 router.post('/', (req, res) => {
