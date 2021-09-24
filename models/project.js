@@ -36,7 +36,6 @@ const projectsSchema = new Schema({
   projectStatus: {
     type: String,
     enum: ['current', 'available', 'complete'],
-    default: 'available',
   },
   legalAgreement: { type: String },
   thankYouLetter: { type: String },

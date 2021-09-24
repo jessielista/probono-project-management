@@ -110,3 +110,29 @@ a {
     border-radius: 30px;
 }
 
+/* .dot-color{
+  background-color: rgb(235, 230, 230);
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+} */
+
+.dot-color-red{
+  background-color: red;
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.dot-color-green{
+  background-color: green;
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.dot-color-yellow{
+   background-color: yellow;
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}

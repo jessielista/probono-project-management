@@ -9,22 +9,37 @@
 <body>
   <h1> Pro bono Projects Manager</h1>
 
-  <!-- <div>
-      <button class="sortName-button">Sort by Name</button>
-      <button class="">Sort by Status</button>
-  </div> -->
+<!-- <div>
+      <button class="sortName-button">Sort by Project Name</button>
+</div>  -->
    <form action="/probono/new"><button class="index-button">Add New</button>
   <div class="container box">
     <table>
+      <tr>
+        <td>Project Name</td>
+        <td>Firm Name</td>
+        <td>Project Status</td>
+        </tr>
       <% for (let i = 0; i < project.length; i++) { %>
         <tr>
-        
-        <td class="project-name-href"><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a></td> 
-          <td>Firm Name: <%= project[i].firmName%></td>
-          <td>Project Status: <%= project[i].projectStatus %></td>
+        <td class="project-name-href"><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a>
+        </td> 
+          <td><%= project[i].firmName%></td>
+          <td><span class="status-color"><%= project[i].projectStatus %></span>
+            <% if (project[i].projectStatus == 'available') { %>
+             <% console.log("Green")%>
+             <td class="dot-color-green"></td>
+          <% } else if(project[i].projectStatus == 'current') { %>
+            <% console.log("Yellow")%>
+              <td class="dot-color-yellow"></td>
+          <% } else if(project[i].projectStatus == 'complete') { %>
+            <% console.log("Red")%>
+              <td class="dot-color-red"></td>
+          <% } %> 
+          </td>
         </tr>
         <% } %>
-        </table>
+        </table>        
     </div>
     </form>
 </body>
