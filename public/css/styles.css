@@ -24,7 +24,7 @@ table{
  border-bottom:1px solid black; 
 } */
 
-td{
+td, th{
    padding: 15px;
 }
 

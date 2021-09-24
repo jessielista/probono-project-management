@@ -9,37 +9,49 @@
 <body>
   <h1> Pro bono Projects Manager</h1>
 
-<!-- <div>
+<div>
       <button class="sortName-button">Sort by Project Name</button>
-</div>  -->
+</div> 
    <form action="/probono/new"><button class="index-button">Add New</button>
   <div class="container box">
+
+    <!-- if add button is clicked then do the following adding of table rows  -->
     <table>
+      <!-- table row with table headers -->
       <tr>
-        <td>Project Name</td>
-        <td>Firm Name</td>
-        <td>Project Status</td>
-        </tr>
+        <th>Project Name</th><th>Firm Name</th><th>Project Status</th>
+      </tr>
+
+          <!-- </% let pushedNames = [] %> -->
+
+          <!-- start of for loop, this is what adds a project when the Add Button is clicked -->
       <% for (let i = 0; i < project.length; i++) { %>
-        <tr>
+
+         <!-- </% pushedNames.push(project[i].projectName) %> -->
+          <!-- </% console.log(project[i].projectName) %> -->
+      <!-- 1st table date in row -->
+      <tr>
         <td class="project-name-href"><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a>
         </td> 
-          <td><%= project[i].firmName%></td>
-          <td><span class="status-color"><%= project[i].projectStatus %></span>
+      <!-- 2nd table date in row -->
+        <td><%= project[i].firmName%>
+        </td>
+      <!-- 3rd table date in row -->
+        <td><span class="status-color"><%= project[i].projectStatus %></span>
             <% if (project[i].projectStatus == 'available') { %>
-             <% console.log("Green")%>
              <td class="dot-color-green"></td>
           <% } else if(project[i].projectStatus == 'current') { %>
-            <% console.log("Yellow")%>
               <td class="dot-color-yellow"></td>
           <% } else if(project[i].projectStatus == 'complete') { %>
-            <% console.log("Red")%>
               <td class="dot-color-red"></td>
           <% } %> 
-          </td>
-        </tr>
+        </td>
+      </tr>
         <% } %>
-        </table>        
+<!-- https://stackoverflow.com/questions/65521558/sorting-array-of-objects-in-ejs -->
+        <!-- </% console.log(pushedNames) %> -->
+        <!-- </% console.log(pushedNames.sort()) %>  -->
+        </table> 
     </div>
     </form>
 </body>
