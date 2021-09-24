@@ -7,21 +7,25 @@
 
 </head>
 <body>
-  <h1> Pro bono Projects - Home Page  </h1>
+  <h1> Pro bono Projects Manager</h1>
 
-   <!-- <a href="/probono/new">Add a new Project</a> -->
-   <form action="/probono/new"><button>Add New Project</button></form>
-  <div class="container">
+  <!-- <div>
+      <button class="sortName-button">Sort by Name</button>
+      <button class="">Sort by Status</button>
+  </div> -->
+   <form action="/probono/new"><button class="index-button">Add New</button>
+  <div class="container box">
     <table>
       <% for (let i = 0; i < project.length; i++) { %>
         <tr>
         
-        <td><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a></td> 
+        <td class="project-name-href"><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a></td> 
           <td>Firm Name: <%= project[i].firmName%></td>
           <td>Project Status: <%= project[i].projectStatus %></td>
         </tr>
         <% } %>
         </table>
     </div>
+    </form>
 </body>
 </html>

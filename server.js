@@ -7,10 +7,11 @@ const mongoose = require('mongoose')
 
 require('dotenv').config()
 const mongoURI = process.env.mongoURI
-const db = mongoose.connection
+const db = mongoose.connection // This fires off/start the connection 
 
 const Projects = require('./models/project.js')
 
+// mongoose.connect is what is we need to connect to the locally hosted database, which is mongoURI and we stored that in the .env, but it could be stored here in server.js
 mongoose.connect(
   mongoURI,
   {
@@ -22,6 +23,7 @@ mongoose.connect(
   }
 )
 
+// This feedback for the database (db) connection. Above is where I created the constant db, which = mongoose.connection.
 db.on('error', (error) => {
   console.log('ERROR: ', error)
 })

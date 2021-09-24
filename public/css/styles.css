@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
-  background-color: rgb(57, 189, 250);
+  background-color: #ADE1E5;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: montserrat, arial, verdana;
 }
 
 h1{
@@ -11,20 +12,20 @@ h1{
 }
 
 table{
-  font-size: 28px;
+  font-size: 20px;
    margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
-  border-collapse:collapse; 
-  border-spacing:32px 40px;
+  line-height: 1;
+   border-collapse:separate; 
+  border-spacing: 0 1em;
 }
 
-tr{
-  border-bottom:1px solid black;
-}
+/* tr{
+ border-bottom:1px solid black; 
+} */
 
 td{
-   padding: 10px
+   padding: 15px;
 }
 
 /* show page */
@@ -35,23 +36,77 @@ text-align: left;
 }
 
 
-.buttonClass, button {
+ button {
   background-color:#f8f8ff;
   border: none;
   color: black;
-  padding: 15px 32px;
-  text-align: center;
+  /* padding: 15px 32px; */
+  /* text-align: center; */
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  width: 150px;
-  border: 2px solid black;
+  /* width: 150px; */
+  /* border: 2px solid black; */
   border-radius: 5px;
+   animation: bounce 2s ease-in-out infinite;
 }
 
 form{
   text-align: center;
+}
+
+/* index page */
+.container {
+  background-color: #B9DFBB;
+  width: 800px;
+  margin: 50px;
+  /* height: 550px; */
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+}
+
+.box{
+      box-shadow: 0 0 15px 1px rgb(0 0 0 / 40%);
+}
+
+a {
+  text-decoration: none;
+  height: 10px;
+}
+
+.index-button{
+ transform: translate(500%, -10%);
+    top: 10rem;
+    /* right: 7rem; */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #C4C6E7;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%);
+}
+.sortName-button{
+ transform: translate(800%, 102%);
+ position: fixed;
+    top: 0;
+    /* right: 7rem; */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #C4C6E7;
+      text-align: center;
+      display: inline;
+
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%);
+}
+
+.project-name-href{
+    background-color: #C4C6E7;
+    /* box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%); */
+    border-radius: 30px;
 }
 

@@ -3,15 +3,18 @@ const router = express.Router()
 const Projects= require('../models/project.js')
 
 // index route
-router.get('/', (req, res) => {
+router.get('/', (req, res) => { // request line, then response is what follows
   // res.render('index.ejs')
-
-  Projects.find({}, (err, allProjects) => {
-    // console.log(allProjects)
-    res.render('index.ejs', {
-      project: allProjects,
+   try {
+    Projects.find({}, (error, allProjects) => {
+       // console.log(allProjects)
+      error ? res.send(error) : res.render('index.ejs', {
+            project: allProjects,
+          })
     })
-  })
+  } catch (error) {
+    res.send(error.message)
+   }
 })
 
 // new route
@@ -21,10 +24,18 @@ router.get('/new', (req, res) => {
 
 // show route
 router.get('/:id', (req, res) => {
+  // console.log(req.params.id) gives the id in the terminal for the item selected.
   Projects.findById(req.params.id, (error, foundProject) => {
     // console.log(foundProject)
     res.render('show.ejs', { project: foundProject })
   })
+
+  // })
+  // Issue I think is here, accessing nested sub document?
+  // Projects.find({
+  //   internalContacts: {}
+
+  // })
 })
 
 // edit route

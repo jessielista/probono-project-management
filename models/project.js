@@ -12,20 +12,19 @@ const projectsSchema = new Schema({
     enum: ['yes', 'no', 'soon'],
     default: 'no',
   },
-  // internalContacts: [
-  //   {
-  //     associateName: String ,
+  // internalContacts: {
+  //     associateName: { type: String },
   //     email: { type: String },
   //     phoneNumber: { type: Number },
   //     title: { type: String },
   //   },
-  //   // {
-  //   //   associateName: { type: String },
-  //   //   email: { type: String },
-  //   //   phoneNumber: { type: Number },
-  //   //   title: { type: String },
-  //   // },
-  // ],
+    // {
+    //   associateName: { type: String },
+    //   email: { type: String },
+    //   phoneNumber: { type: Number },
+    //   title: { type: String },
+    // },
+  
   // externalContacts: [
   //   {
   //     associateName: { type: String },
