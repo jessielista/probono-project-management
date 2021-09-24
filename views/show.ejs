@@ -6,31 +6,43 @@
   <link rel="stylesheet" href="/css/styles.css"> 
   </head>
   <body >
-    <a href="/probono">Back to the HOME PAGE</a>
     <h1>Project Page for: <%= project.projectName %> </h1>
 
-    <h2>This is the show page for <%= project.projectName %></h2>
     <h3>Project Details</h3>
 
-    <div>
-          Project Description: <%= project.projectDescription %> </br>
-          Date Submitted: <%= project.dateSubmitted %> </br>
-          Date Placed: <%= project.datePlaced %> </br>
-          Firm Name: <%= project.firmName%> </br>
-          Project Status: <%= project.projectStatus %> </br>
-          Legal Agreement: <%= project.legalAgreement %> </br>
-          Thank You Letter: <%= project.thankYouLetter %> </br>
-          Internal Contacts: <%= project.internalContacts %> </br>
+    <div class="show-page-container">
+      <div class="project-segments-1">
+        <p>Project Status: <%= project.projectStatus %> </br></p>
+        
+      </div>
+      <div class="project-segments-2">
+        <p>Project Description: <%= project.projectDescription %></br></p>
+        <p>Date Submitted: <%= project.dateSubmitted %> </br></p> 
+      </div>
+      <div class="project-segments-3">
+        <p>Date Placed: <%= project.datePlaced %> </br></p>
+        <p> Firm Name: <%= project.firmName%> </br></p>
+        <p>Staff Contact: <%= project.staffName %> </br></p>
+      </div>
+      <div class="project-segments-4">
+        <p>Legal Agreement: <%= project.legalAgreement %> </br></p>
+        <p>Thank You Letter: <%= project.thankYouLetter %> </br></p>
+      </div>
+         
     </div>
 
-     <a href="/probono/<%=project.id%>/edit">Edit this project: <%= project.name %></a>
+     <!-- <a href="/probono/</%=project.id%>/edit">Edit this project: </%= project.name %></a> -->
      
      <form action="/probono/<%=project.id%>/edit">
     <button>Edit</button>
     </form>
+<form action="/probono">
+    <button>Back to the HOME PAGE</button>
+    </form>
 
   <form action="/probono/<%=project.id%>?_method=DELETE" method="POST">
     <button>Delete</button>
+
   </form>
 
   </body>

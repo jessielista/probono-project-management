@@ -136,3 +136,41 @@ a {
     width: 15px;
     height: 15px;
 }
+
+fieldset {
+border: none;
+color: #FFF;
+background: #C4C6E7;
+font-size: 1.5em;
+padding: 5px;
+}
+
+.show-page-container{
+background-color: #B9DFBB;
+  width: 800px;
+  margin: 50px;
+  /* height: 550px; */
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.project-segments-1{
+  width: 200px;
+  height: 100px;
+  border: 5px solid red;
+}
+.project-segments-2{
+  width: 250px;
+  border: 5px solid blue;
+}
+.project-segments-3{
+  width: 300px;
+border: 5px solid purple;}
+.project-segments-4{
+  width: 400px;
+  border: 5px solid orange;
+}

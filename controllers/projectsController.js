@@ -29,13 +29,6 @@ router.get('/:id', (req, res) => {
     // console.log(foundProject)
     res.render('show.ejs', { project: foundProject })
   })
-
-  // })
-  // Issue I think is here, accessing nested sub document?
-  // Projects.find({
-  //   internalContacts: {}
-
-  // })
 })
 
 // edit route

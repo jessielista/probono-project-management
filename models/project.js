@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema, model } = mongoose
+const Contact = require('./contact')
 
 const projectsSchema = new Schema({
   projectName: { type: String },
@@ -12,31 +13,11 @@ const projectsSchema = new Schema({
     enum: ['yes', 'no', 'soon'],
     default: 'no',
   },
-  // internalContacts: {
-  //     associateName: { type: String },
-  //     email: { type: String },
-  //     phoneNumber: { type: Number },
-  //     title: { type: String },
-  //   },
-    // {
-    //   associateName: { type: String },
-    //   email: { type: String },
-    //   phoneNumber: { type: Number },
-    //   title: { type: String },
-    // },
-  
-  // externalContacts: [
-  //   {
-  //     associateName: { type: String },
-  //     email: { type: String },
-  //     phoneNumber: { type: Number },
-  //     title: { type: String },
-  //   },
-  // ],
   projectStatus: {
     type: String,
     enum: ['current', 'available', 'complete'],
   },
+  contactPerson: [Contact.schema],
   legalAgreement: { type: String },
   thankYouLetter: { type: String },
 })
