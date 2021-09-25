@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
-  background-color: #ADE1E5;
+  background-color: #EBEBEB;
   margin: 0;
   font-family: montserrat, arial, verdana;
 }
@@ -9,6 +9,7 @@ body {
 h1{
   font-size: 40px;
   text-align: center;
+      transform: translate(-10%, 90%);
 }
 
 table{
@@ -26,6 +27,7 @@ table{
 
 td, th{
    padding: 15px;
+   text-align: center;
 }
 th{
 text-transform:uppercase;
@@ -63,15 +65,19 @@ form{
 
 /* index page */
 .container {
-  background-color: #B9DFBB;
+  background-color: #D5ECD7;
   width: 800px;
   margin: 50px;
   /* height: 550px; */
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 50px;
+  margin-left:250px;
   padding: 30px;
   border-radius: 30px;
   display: flex;
-  position: relative;
+  /* position: relative; */
+    /* padding-top: 150px; */
+
 }
 
 .box{
@@ -87,14 +93,15 @@ a {
 
 
 .index-button{
- transform: translate(500%, -10%);
+ transform: translate(500%, -50%);
     top: 10rem;
     /* right: 7rem; */
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    background-color: #C4C6E7;
+    background-color: #D5ECD7;
     box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%);
+    font-size: 30px;
 }
 .sortName-button{
  transform: translate(800%, 102%);
@@ -232,4 +239,15 @@ p{
 .status-text{
     text-transform:capitalize;
 
+}
+
+header{
+  width: 100%;
+  /* border: 7px solid #e3caea; */
+  background-color: #C4C6E7;
+  /* height: 20%; */
+  /* position: fixed;
+  padding-top: 50px; */
+  padding-top: 5px;
+   
 }
