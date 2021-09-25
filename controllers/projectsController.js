@@ -1,15 +1,20 @@
 const express = require('express')
 const router = express.Router()
 const Projects= require('../models/project.js')
+const mongoose = require('mongoose')
+
 
 // index route
 router.get('/', (req, res) => { // request line, then response is what follows
   // res.render('index.ejs')
    try {
-    Projects.find({}, (error, allProjects) => {
-       // console.log(allProjects)
+    Projects.find({} ).sort({projectName: 'asc'}).exec(  (error, allProjects) => {
+       console.log(allProjects)
+      const project = allProjects
+
+
       error ? res.send(error) : res.render('index.ejs', {
-            project: allProjects, 
+            project, 
             // key: value
           })
     })
@@ -55,7 +60,11 @@ router.put('/:id', (req, res) => {
 
 // post route
 router.post('/', (req, res) => {
-  Projects.create(req.body, (error, createdProject) => {
+  const newProject = {
+    ...req.body, 
+    projectName: req.body.projectName.toLowerCase()
+  }
+  Projects.create(newProject, (error, createdProject) => {
     res.redirect('/probono')
     console.log(createdProject)
   })
