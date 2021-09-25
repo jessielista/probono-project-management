@@ -37,7 +37,7 @@
         <td><%= project[i].firmName%>
         </td>
       <!-- 3rd table date in row -->
-        <td><span class="status-color"><%= project[i].projectStatus %></span>
+        <td><span class="status-text"><%= project[i].projectStatus %></span>
             <% if (project[i].projectStatus == 'available') { %>
              <td class="dot-color-green"></td>
           <% } else if(project[i].projectStatus == 'current') { %>

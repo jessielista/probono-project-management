@@ -17,7 +17,7 @@ table{
   margin-right: auto;
   line-height: 1;
    border-collapse:separate; 
-  border-spacing: 0 1em;
+  border-spacing: 1.5em 1em;
 }
 
 /* tr{
@@ -26,6 +26,10 @@ table{
 
 td, th{
    padding: 15px;
+}
+th{
+text-transform:uppercase;
+ 
 }
 
 /* show page */
@@ -77,7 +81,10 @@ form{
 a {
   text-decoration: none;
   height: 10px;
+  cursor: pointer;
+
 }
+
 
 .index-button{
  transform: translate(500%, -10%);
@@ -123,12 +130,6 @@ a {
     width: 15px;
     height: 15px;
 }
-.dot-color-green{
-  background-color: green;
-  border-radius: 50%;
-    width: 15px;
-    height: 15px;
-}
 
 .dot-color-yellow{
    background-color: yellow;
@@ -136,6 +137,39 @@ a {
     width: 15px;
     height: 15px;
 }
+.dot-color-green{
+  background-color: green;
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.dot-color-red-show{
+  background-color: red;
+  border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.dot-color-yellow-show{
+  background-color: yellow;
+  border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.dot-color-green-show{
+  background-color: green;
+  border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+
+.dot-show{
+  transform: translate(170%, -100%);
+
+}
+
 
 fieldset {
 border: none;
@@ -156,16 +190,20 @@ background-color: #B9DFBB;
   display: flex;
   position: relative;
   flex-direction: column;
+  justify-content: space-between
 }
 
 .project-segments-1{
   width: 200px;
-  height: 100px;
-  border: 5px solid red;
+  height: 150px;
+  /* border: 5px solid red;
+  background: pink; */
 }
 .project-segments-2{
-  width: 250px;
-  border: 5px solid blue;
+  /* width: 250px; */
+  /* border: 5px solid blue; */
+  background-color: #F0ECBC;
+  border-radius: 30px;
 }
 .project-segments-3{
   width: 300px;
@@ -173,4 +211,25 @@ border: 5px solid purple;}
 .project-segments-4{
   width: 400px;
   border: 5px solid orange;
+}
+
+.project-show-para{
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+}
+h4{
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+p{
+  text-align: center;
+}
+
+.status-text{
+    text-transform:capitalize;
+
 }
