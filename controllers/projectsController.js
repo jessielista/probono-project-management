@@ -9,7 +9,8 @@ router.get('/', (req, res) => { // request line, then response is what follows
     Projects.find({}, (error, allProjects) => {
        // console.log(allProjects)
       error ? res.send(error) : res.render('index.ejs', {
-            project: allProjects,
+            project: allProjects, 
+            // key: value
           })
     })
   } catch (error) {

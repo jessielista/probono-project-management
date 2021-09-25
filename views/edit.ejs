@@ -8,7 +8,6 @@
 </head>
 <body>
  <h1>Edit Project Page</h1>
-    <a href="/probono">Back to the HOME PAGE</a>
     <!-- <form method="POST" action="/probono"> -->
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
@@ -62,9 +61,8 @@
         <label for="staffContact"> Staff Contact:</label>
         <input id="staffContact" type="text" name="staffContact" placeholder="Name Here" value="<%=project.staffName%>">
       </fieldset>
-
     <button>Add the project information</button>
     </form>
-  
+  <a href="/probono">Back to the HOME PAGE</a>
 </body>
 </html>
