@@ -6,7 +6,7 @@ const methodOveride = require('method-override')
 const mongoose = require('mongoose')
 
 require('dotenv').config()
-const mongoURI = process.env.mongoURI
+const mongoURI = process.env.MONGODB_URI
 const db = mongoose.connection // This fires off/start the connection 
 
 const Projects = require('./models/project.js')
