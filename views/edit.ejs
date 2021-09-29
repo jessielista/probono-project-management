@@ -7,7 +7,7 @@
   <!-- <link rel="stylesheet" href="/css/styles.css">  -->
 </head>
 <body>
- <h1>Edit Project Page</h1>
+<h1>Edit Project Page</h1>
     <!-- <form method="POST" action="/probono"> -->
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
@@ -22,7 +22,7 @@
         <label for="dateSubmitted"> Date Submitted</label>
         <input id="dateSubmitted" type="text" name="dateSubmitted" value="<%=project.dateSubmitted%>">
       </fieldset>
-       <fieldset>
+      <fieldset>
         <label for="datePlaced"> Date Placed:</label>
         <input id="datePlaced" type="text" name="datePlaced" value="<%=project.datePlaced%>">
       </fieldset>
@@ -46,20 +46,18 @@
         <option value="complete">Complete</option>
         </select>
       </fieldset>
-       <fieldset>
+      <fieldset>
+        <label for="staffInfo"> Staff Name:</label>
+        <input id="staffName" type="text" name="staffName" placeholder="Name Here" value="<%=project.staffName%>">
+        <input id="staffEmail" type="text" name="staffEmail" placeholder="Name Here" value="<%=project.staffEmail%>">
+      </fieldset>
+      <fieldset>
         <label for="legalAgreement"> Legal Agreement:</label>
         <input id="legalAgreement" type="text" name="legalAgreement" value="<%=project.legalAgreement%>">
       </fieldset>
-       <fieldset>
+      <fieldset>
         <label for="thankYouLetter"> Thank You Letter:</label>
         <input id="thankYouLetter" type="text" name="thankYouLetter" value="<%=project.thankYouLetter%>">
-      </fieldset>
-      <!-- Plan to make Project Status as radio buttons or checkbox. Will Make the legal agreement and ty letter able to accept a file, like a PDF 1 pager -->
-
-      <!-- Need to add in internal and external contacts here -->
-     <fieldset>
-        <label for="staffContact"> Staff Contact:</label>
-        <input id="staffContact" type="text" name="staffContact" placeholder="Name Here" value="<%=project.staffName%>">
       </fieldset>
     <button>Add the project information</button>
     </form>

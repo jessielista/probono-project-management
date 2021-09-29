@@ -16,9 +16,8 @@ const projectsSchema = new Schema({
     type: String,
     enum: ['current', 'available', 'complete'],
   },
-  staffEmail: { name: String },
   staffName: { name: String },
-  // turn into an array with all the info.
+  staffEmail: { name: String },
   legalAgreement: { type: String },
   thankYouLetter: { type: String },
 })
