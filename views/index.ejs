@@ -7,18 +7,13 @@
 
 </head>
 <body>
-<!-- <div>
-      <button class="sortName-button">Sort by Project Name</button>
-</div>  -->
 <header>
-   <h1> Pro bono Projects Manager</h1>
-   <form action="/probono/new">
-   
-<button class="index-button">+</button>
+<h1 class="h1-index"> Pro bono Projects Manager</h1>
+  <form action="/probono/new">
 
-    <!-- <button class="index-button">Add New</button> -->
+<button class="index-button">+</button>
 </header>
- <!-- <h1> Pro bono Projects Manager</h1> -->
+<!-- <h1> Pro bono Projects Manager</h1> -->
   <div class="container box">
 
     <!-- if add button is clicked then do the following adding of table rows  -->
@@ -33,7 +28,7 @@
           <!-- start of for loop, this is what adds a project when the Add Button is clicked -->
       <% for (let i = 0; i < project.length; i++) { %>
 
-         <!-- </% pushedNames.push(project[i].projectName) %> -->
+        <!-- </% pushedNames.push(project[i].projectName) %> -->
           <!-- </% console.log(project[i].projectName) %> -->
       <!-- 1st table date in row -->
       <tr>
@@ -45,7 +40,7 @@
       <!-- 3rd table date in row -->
         <td><span class="status-text"><%= project[i].projectStatus %></span>
             <% if (project[i].projectStatus == 'available') { %>
-             <td class="dot-color-green"></td>
+            <td class="dot-color-green"></td>
           <% } else if(project[i].projectStatus == 'current') { %>
               <td class="dot-color-yellow"></td>
           <% } else if(project[i].projectStatus == 'complete') { %>
@@ -54,19 +49,6 @@
         </td>
       </tr>
         <% } %>
-<!-- https://stackoverflow.com/questions/65521558/sorting-array-of-objects-in-ejs -->
-        <!-- </% console.log(pushedNames) %> -->
-        <!-- </% console.log(pushedNames.sort()) %>  -->
-
-        <!-- 2nd for loop inside the table, this one will be for the button -->
-        <!-- https://dev.to/jenshaw/sorting-out-javascript-sort-4kbl -->
-        <!-- https://allthingsjavascript.com/blog/index.php/2017/09/07/performing-a-case-insensitive-sort-on-an-array-of-strings/ -->
-        
-
-
-        <!-- contactObject -->
-
-
         </table> 
     </div>
     </form>
