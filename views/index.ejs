@@ -22,15 +22,8 @@
       <tr>
         <th>Project Name</th><th>Firm Name</th><th>Project Status</th>
       </tr>
-
-          <!-- </% let pushedNames = [] %> -->
-
           <!-- start of for loop, this is what adds a project when the Add Button is clicked -->
       <% for (let i = 0; i < project.length; i++) { %>
-
-        <!-- </% pushedNames.push(project[i].projectName) %> -->
-          <!-- </% console.log(project[i].projectName) %> -->
-      <!-- 1st table date in row -->
       <tr>
         <td class="project-name-href"><a href="/probono/<%=project[i].id%>" class=""><%= project[i].projectName %></a>
         </td> 
