@@ -126,6 +126,7 @@ a {
   background-color: #C4C6E7;
   /* box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%); */
   border-radius: 30px;
+  text-transform: capitalize;
 }
 
 /* .dot-color{
