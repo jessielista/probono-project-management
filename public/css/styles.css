@@ -17,6 +17,7 @@ h1{
   font-size: 40px;
   text-align: center;
   transform: translate(-10%, 90%);
+  color:white;
 }
 
 table{
@@ -38,7 +39,12 @@ td, th{
 }
 th{
 text-transform:uppercase;
+color: #085869;
  
+}
+td{
+  color: #B97A50;
+  
 }
 
 /* show page */
@@ -95,7 +101,7 @@ form{
 /* index page */
 .index-container {
   /* background-color: #D5ECD7; */
-  background-color: #87C0BC;
+  background-color: #A1CECB;
   width: 800px;
   margin: 50px;
   /* height: 550px; */
@@ -118,7 +124,8 @@ a {
   text-decoration: none;
   height: 10px;
   cursor: pointer;
-
+  color: white;
+  /* unvisited link */
 }
 
 
@@ -148,10 +155,12 @@ a {
 }
 
 .project-name-href{
-  background-color: #C4C6E7;
+  /* background-color: #C4C6E7; */
+  background-color: #FFA188;
   /* box-shadow: 0 0 10px 1px rgb(0 0 0 / 40%); */
   border-radius: 30px;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 /* .dot-color{
@@ -162,40 +171,40 @@ a {
 } */
 
 .dot-color-red{
-  background-color: red;
+  background-color: #ff6961;
   border-radius: 50%;
   width: 15px;
   height: 15px;
 }
 
 .dot-color-yellow{
-  background-color: yellow;
+  background-color: #FCFC69;
   border-radius: 50%;
   width: 15px;
   height: 15px;
 }
 .dot-color-green{
-  background-color: green;
+  background-color: #28A228;
   border-radius: 50%;
   width: 15px;
   height: 15px;
 }
 
 .dot-color-red-show{
-  background-color: red;
+  background-color: #ff6961;
   border-radius: 50%;
   width: 45px;
   height: 45px;
 }
 
 .dot-color-yellow-show{
-  background-color: yellow;
+  background-color: #FCFC69;
   border-radius: 50%;
   width: 45px;
   height: 45px;
 }
 .dot-color-green-show{
-  background-color: green;
+  background-color: #28A228;
   border-radius: 50%;
   width: 45px;
   height: 45px;
@@ -277,7 +286,7 @@ header{
   /* border: 7px solid #e3caea; */
   /* background-color: #C4C6E7; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
-  background-color: #87C0BC;
+  background-color: #A1CECB;
   /* height: 20%; */
   /* position: fixed;
   padding-top: 50px; */
