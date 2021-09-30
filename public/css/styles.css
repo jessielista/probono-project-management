@@ -46,7 +46,6 @@ text-align: left;
  margin-left: 550px;
 }
 
-
  button {
   background-color:#f8f8ff;
   border: none;
@@ -61,7 +60,30 @@ text-align: left;
   /* width: 150px; */
   /* border: 2px solid black; */
   border-radius: 5px;
-   animation: bounce 2s ease-in-out infinite;
+}
+
+.edit-button, .new-button{
+  position: fixed;
+  top: 105%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.submit-new-button{
+   background-color:#f8f8ff;
+  border: none;
+  color: black;
+  /* padding: 15px 32px; */
+  /* text-align: center; */
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
 }
 
 form{
@@ -69,7 +91,7 @@ form{
 }
 
 /* index page */
-.container {
+.index-container {
   background-color: #D5ECD7;
   width: 800px;
   margin: 50px;
@@ -185,13 +207,13 @@ a {
 
 fieldset {
   border: none;
-  color: #FFF;
-  background: #C4C6E7;
+  color: black;
+  /* background: #C4C6E7; */
   font-size: 1.5em;
   padding: 5px;
 }
 
-.show-page-container{
+.show-page-container, .new-page-container, .edit-page-container{
   background-color: #B9DFBB;
   width: 800px;
   margin: 50px;
@@ -204,7 +226,6 @@ fieldset {
   flex-direction: column;
   justify-content: space-between
 }
-
 
 .project-segments-1{
   width: 200px;

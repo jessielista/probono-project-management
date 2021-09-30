@@ -9,6 +9,7 @@
 <body>
 <h1>Edit Project Page</h1>
     <!-- <form method="POST" action="/probono"> -->
+      <div class="edit-page-container">
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
         <label for="projectName"> Project Name:</label>
@@ -62,8 +63,11 @@
         <label for="thankYouLetter"> Thank You Letter:</label>
         <input id="thankYouLetter" type="text" name="thankYouLetter" value="<%=project.thankYouLetter%>">
       </fieldset>
-    <button>Add the project information</button>
+      </div>
+    <button class="edit-button">Add the project information</button>
     </form>
-  <a href="/probono">Back to the HOME PAGE</a>
+    <form action="/probono">
+    <button>Back to the HOME PAGE</button>
+    </form>
 </body>
 </html>
