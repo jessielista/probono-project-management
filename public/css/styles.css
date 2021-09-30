@@ -2,8 +2,10 @@
 
 body {
   background-color: #EBEBEB;
+  background-image: url("/css/background.jpg");
   margin: 0;
   font-family: montserrat, arial, verdana;
+  
 }
 
 h1{
@@ -92,7 +94,8 @@ form{
 
 /* index page */
 .index-container {
-  background-color: #D5ECD7;
+  /* background-color: #D5ECD7; */
+  background-color: #87C0BC;
   width: 800px;
   margin: 50px;
   /* height: 550px; */
@@ -272,7 +275,9 @@ p{
 header{
   width: 100%;
   /* border: 7px solid #e3caea; */
-  background-color: #C4C6E7;
+  /* background-color: #C4C6E7; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background-color: #87C0BC;
   /* height: 20%; */
   /* position: fixed;
   padding-top: 50px; */
