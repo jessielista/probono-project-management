@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/css/styles.css"> 
   </head>
   <body >
-    <h1>Project Page for: <%= project.projectName %> </h1>
+    <h1>Project: <%= project.projectName %> </h1>
     <div class="show-page-container">
       <div class="project-segments-1">
         <h4>Project Status:</h4><p class="project-show-para"><%= project.projectStatus %></p> </br>
@@ -35,13 +35,14 @@
       </div>
     </div>
     <form action="/probono/<%=project.id%>/edit">
-    <button>Edit</button>
+    <button class="myButton">Edit</button>
     </form>
     <form action="/probono">
-    <button>Back to the HOME PAGE</button>
+    <button class="myButton">Home Page</button>
     </form>
     <form action="/probono/<%=project.id%>?_method=DELETE" method="POST">
-    <button>Delete</button>
+    <button class="myButton">Delete</button>
     </form>
     </body>
 </html>
+

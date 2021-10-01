@@ -13,11 +13,11 @@
       <form action="/probono/<%=project.id%>?_method=PUT" method="POST" >
       <fieldset>
         <label for="projectName"> Project Name:</label>
-        <input id="projectName" type="text" name="projectName" value="<%=project.projectName%>">
+        <input id="projectName" type="text" name="projectName" required value="<%=project.projectName%>">
       </fieldset>
       <fieldset>
         <label for="projectDescription"> Project Description</label>
-        <input id="projectDescription" type="text" name="projectDescription" value="<%=project.projectDescription%>">
+        <input id="projectDescription" type="text" name="projectDescription" required value="<%=project.projectDescription%>">
       </fieldset>
       <fieldset>
         <label for="dateSubmitted"> Date Submitted</label>
@@ -42,9 +42,12 @@
       <fieldset>
         <label for="projectStatus"> Project Status:</label>
         <select name="projectStatus" id="projectStatus">
+          <option <%=project.projectStatus%>>Previously Selected: <%=project.projectStatus%></option>
         <option value="available">Available</option>
         <option value="current">Current</option>
         <option value="complete">Complete</option>
+        <!-- probably a good idea to switch to radio buttons -->
+        <!-- https://designsmarts.co/the-problem-with-dropdowns/ -->
         </select>
       </fieldset>
       <fieldset>
@@ -63,8 +66,8 @@
         <label for="thankYouLetter"> Thank You Letter:</label>
         <input id="thankYouLetter" type="text" name="thankYouLetter" value="<%=project.thankYouLetter%>">
       </fieldset>
+          <button class="edit-button">Add the project information</button>
       </div>
-    <button class="edit-button">Add the project information</button>
     </form>
     <form action="/probono">
     <button>Back to the HOME PAGE</button>

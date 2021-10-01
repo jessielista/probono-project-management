@@ -16,6 +16,7 @@ header{
 h1{
   font-size: 40px;
   text-align: center;
+  text-transform:capitalize;
 }
 
 .h1-index{
@@ -81,13 +82,25 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
-
-.edit-button, .new-button{
-  position: fixed;
+/* 
+.edit-button { */
+    /* transform: translate(0%, 20%);
   top: 105%;
   left: 50%;
   margin-top: -100px;
-  margin-left: -100px;
+  margin-left: -100px; */
+/* } */
+
+option{
+  text-transform: capitalize;
+}
+
+.new-button{
+  top: 105%;
+  transform: translate(300%, 20%);
+  top: 10rem;
+  width: 120px;
+  background-color: #D5ECD7;
 }
 
 .submit-new-button{
@@ -253,4 +266,43 @@ fieldset {
 
 .status-text{
   text-transform:capitalize;
+}
+
+textarea {
+  height: 40px;
+  width: 70%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 4px;
+  /* background-color: #f8f8f8; */
+  font-size: 16px;
+  resize: vertical;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #ffa288 5%, #fbb158 100%);
+	background-color:#ffa288;
+	border-radius:28px;
+	border:1px solid #fbb158;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #fbb158 5%, #ffa288 100%);
+	background-color:#fbb158;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
