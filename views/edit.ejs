@@ -29,7 +29,7 @@
       </fieldset>
       <fieldset>
         <label for="firmName"> Firm Name:</label>
-        <input id="firmName" type="text" name="firmName" value="<%=project.firmName%>">
+        <input id="firmName" type="text" name="firmName" required value="<%=project.firmName%>">
       </fieldset>
       <fieldset>
         <label for="introductionsMade"> Introductions Made:</label>
@@ -41,11 +41,11 @@
       </fieldset>
       <fieldset>
         <label for="projectStatus"> Project Status:</label>
-        <select name="projectStatus" id="projectStatus">
-          <option <%=project.projectStatus%>>Previously Selected: <%=project.projectStatus%></option>
+        <select name="projectStatus" id="projectStatus" required>
         <option value="available">Available</option>
         <option value="current">Current</option>
         <option value="complete">Complete</option>
+        <!-- need to stop reset of value -->
         <!-- probably a good idea to switch to radio buttons -->
         <!-- https://designsmarts.co/the-problem-with-dropdowns/ -->
         </select>
