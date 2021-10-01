@@ -25,13 +25,13 @@ h1{
   color:white;
 }
 
-h3{
+/* h3{
 text-align: left;
  margin-left: 550px;
-}
+} */
 
 h4{
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin: 0;
 }
@@ -142,7 +142,7 @@ form{
 }
 
 .show-page-container, .new-page-container, .edit-page-container{
-  background-color: #B9DFBB;
+  background-color: #A1CECB;
   width: 800px;
   margin: 50px;
   margin: auto;
@@ -223,16 +223,25 @@ fieldset {
   height: 150px;
 }
 .project-segments-2{
-  background-color: #F0ECBC;
+  background-color: #FFA188;
   border-radius: 30px;
+  padding: 20px;
+  margin: 40px;
 }
 .project-segments-3{
-  width: 300px;
-  border: 5px solid purple;}
+  width: 500px;
+  align-self: center;
+  border-radius: 30px;
+  background-color: #FBB158;
+  padding: 20px;
+}
+
 
 .project-segments-4{
-  width: 400px;
-  border: 5px solid orange;
+  background-color: #FFA188;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 40px;
 }
 
 .project-show-para{
