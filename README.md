@@ -23,19 +23,19 @@ How to Use: Click the button on the home page, near the top right with a '+' sig
 
 #### MVP Goals
 
--Use Node.js, Mongoose, Express and EJS
--Use the MVC file structure: Models, Views, Controllers
--Use at least one model with all 7 RESTful routes and full CRUD.
--Use git ignore correctly
--Github commit, as the app is updated. 
--Deploy project on Heroku
--Create a README.md file with explanations of the technologies used, the approach was taken, unsolved problems, and notes. It should have: user stories, wireframes and a link to app via Heroku.
+- Use Node.js, Mongoose, Express and EJS
+- Use the MVC file structure: Models, Views, Controllers
+- Use at least one model with all 7 RESTful routes and full CRUD.
+- Use git ignore correctly
+- Github commit, as the app is updated. 
+- Deploy project on Heroku
+- Create a README.md file with explanations of the technologies used, the approach was taken, unsolved problems, and notes. It should have: user stories, wireframes and a link to app via Heroku.
 
 #### Stretch Goals
--Incorporate accessibility features
--Figure out how to add drop-down options
+- Incorporate accessibility features
+- Figure out how to add drop-down options
 
 #### Unsolved Problems
--Issue with drop-down in edit-page and passing through initial values. 
--Adding email/password log-in
--Storing of PDF in database
+- Issue with drop-down in edit-page and passing through initial values. 
+- Adding email/password log-in
+- Storing of PDF in database
